@@ -1,0 +1,562 @@
+﻿/*MATH*/
+.math__start {
+    display: inline-block;
+    padding: 10px 40px;
+    /*border: 1px dashed #2980b9;*/
+    position: relative;
+    overflow: hidden;
+    transition: 0.7s all ease;
+    background-color: #3498db;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.math__finish {
+    display: inline-block;
+    padding: 10px 40px;
+    /*border: 1px dashed #2980b9;*/
+    position: relative;
+    overflow: hidden;
+    transition: 0.7s all ease;
+    background-color: #27ae60;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+}
+    .math__finish:hover {
+        background-color: transparent;
+        border: 1px dashed #27ae60;
+        color: #27ae60;
+    }
+.math__start:hover {
+    background-color: transparent;
+    border: 1px dashed #3498db;
+    color: #3498db;
+}
+        /*.math__start:before {
+        content: "";
+        background-color: red;
+        position: absolute;
+        top: 50%;
+        width: 0;
+        height: 100%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: -1;
+        transition: all 0.6s ease;
+    }*/
+        .math__start:hover:before {
+            width: 100%;
+        }
+
+
+.main-math {
+    padding: 50px 0;
+}
+
+.math__title span {
+    background-image: linear-gradient(to left bottom, #009aff, #ffffff);
+    width: 38px;
+    height: 38px;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 38px;
+    margin-right: 10px;
+    color: #333;
+}
+
+.math__title {
+    display: block;
+    width: 100%;
+}
+
+.math__box {
+    width: 19.66667%;
+    padding-left: 12px;
+    padding-right: 12px;
+    display: block;
+    margin: 10px 0 40px 0;
+}
+
+.math__content span {
+    display: block;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.math__content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .math__content::after {
+        content: "";
+        display: block;
+        border-bottom: 1px solid #333;
+        width: 50%;
+        padding-top: 15px;
+    }
+
+.math__input {
+    display: flex;
+    margin: 0px auto;
+    height: 30px;
+    width: 50%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px dotted #d0caca;
+    font-size: 1.2rem;
+}
+
+.math__content-calculation {
+    padding-right: 30px;
+    font-size: 2.6rem !important;
+}
+
+.math__content-footer {
+}
+
+.math--fl {
+    justify-content: space-between;
+}
+
+.math__content-two {
+    text-align: center;
+    margin: 10px 0 30px 0;
+}
+
+.math__content-three {
+    margin: 20px 0 30px 37px;
+}
+
+.math__answer {
+    background-color: #3498db;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.math__question {
+    font-size: 1.8rem
+}
+
+    .math__question span:nth-child(1) {
+        display: inline-block;
+        width: 90px;
+    }
+
+.math__basic-two {
+    font-size: 1.6rem;
+}
+
+    .math__basic-two input {
+        border: none;
+        outline: none;
+        border-bottom: 2px dotted #d0caca;
+        width: 50%;
+        margin-right: 15px;
+    }
+
+.feeling__slide-box.math__video {
+    width: 500px;
+    margin-bottom: 30px;
+    margin: 0 auto;
+}
+
+#video-block.feeling__stu.feeling__stu--math {
+    margin-bottom: 30px;
+}
+
+@media (min-width:740px) and (max-width:1023px) {
+    .math__answer {
+        width: 50px;
+        height: 50px;
+        margin-right: 5px;
+    }
+}
+
+@media (max-width:739px) {
+    .math__content-three {
+        margin: 20px 0 30px 20px;
+    }
+
+    .feeling__slide-box.math__video {
+        width: 345px;
+        margin-bottom: 30px;
+        margin: 0 auto;
+    }
+}
+
+
+.col-2dot4, /*extra small*/
+.col-sm-2dot4, /*small*/
+.col-md-2dot4, /*medium*/
+.col-lg-2dot4, /*large*/
+.col-xl-2dot4 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.col-2dot4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+
+@media (min-width: 540px) {
+    .col-sm-2dot4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
+@media (min-width: 720px) {
+    .col-md-2dot4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
+@media (min-width: 960px) {
+    .col-lg-2dot4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
+@media (min-width: 1140px) {
+    .col-xl-2dot4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+/*Literature*/
+.literature__heading {
+    text-align: center;
+    color: red;
+}
+
+.literature__title {
+    display: block;
+    font-size: 18px;
+    width: 100%;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.input__literature.mdf {
+    text-align: left;
+}
+
+.literature__title span {
+    color: red;
+}
+
+.literature__box {
+    border: 3px solid #009aff;
+    padding: 50px;
+    text-align: center;
+    border-radius: 25px;
+    margin-bottom: 15px;
+}
+
+.input__literature {
+    border: none;
+    outline: none;
+    border-bottom: 3px dotted #c3c0c0;
+    width: 20%;
+    text-align: right;
+    color: #009aff;
+}
+
+/*Danh Sách Bài Tập*/
+.wrap-product {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.sidebar {
+    /* border: 1px solid #333; */
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    overflow: hidden;
+}
+
+.sidebar__heading {
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 8px 10px;
+    color: #2980b9;
+    /* background-color: var(--color-primary); */
+}
+
+.hierarchy {
+    border: 1px solid #ccc;
+}
+
+.hierarchy__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hierarchy__heading {
+    font-size: 1.4rem;
+    padding: 4px 16px;
+    background-color: var(--color-primary-light);
+}
+
+.hierarchy__link {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 10px 25px;
+    display: block;
+    font-weight: 500;
+    transition: linear 0.3s;
+}
+
+    .hierarchy__link:hover {
+        transform: translateX(5px);
+    }
+
+.card-game {
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: var(--color-white);
+    min-height: 250px;
+    margin-bottom: 10px;
+    transition: linear 0.3s;
+    border: 1px solid #e1e1e1;
+}
+
+    .card-game:hover {
+        box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+        transform: translateY(-3px)
+    }
+
+.game-product__heading {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: block;
+    /* margin: 25px 0 40px 0; */
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0 25px 10px;
+    color: #2980b9;
+}
+
+.card-game__img {
+    width: 100%;
+    height: 140px;
+}
+
+.card-game__heading {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 4px 8px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-height: 1.8rem;
+    height: 3.6rem;
+}
+/*---------------popup----------------------*/
+/*.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    transition: linear 0.5s;
+}
+
+    .modal:target {
+        opacity: 1;
+        visibility: visible;
+    }
+
+.modal__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal:target > .modal__overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal:target ~ .modal__body {
+    animation: fadeUp 0.3s;
+}
+
+.modal__body {
+    position: relative;
+    width: 475px;
+    min-height: 65vh;
+    background: #fff;
+    margin: auto;
+    z-index: 1;
+    transition: linear 0.3s;
+    animation: fadeUp 0.5s;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.closebtn {
+    text-decoration: none;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    background: rgba(0,0,0,0.6);
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    padding: 3px 7px;
+}
+
+    .closebtn:hover,
+    .closebtn:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+@keyframes fadeUp {
+    from {
+        top: 100px
+    }
+
+    to {
+        top: 0;
+    }
+}
+
+.modal-card__img {
+    width: 100%;
+    height: 235px;
+}
+
+.modal-card__content {
+    padding: 10px 15px;
+}
+
+.card-popup__heading {
+    font-size: 3rem;
+}
+
+.card-popup__title {
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    color: #989ca0;
+}
+
+.card-popup__title-left {
+    display: flex;
+    align-content: center;
+    line-height: 1.8rem;
+}
+
+.modal-icon__user {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #000;
+    margin-right: 10px;
+}
+
+.modal-card__heading {
+    border-bottom: 2px solid #989ca0;
+    margin-bottom: 20px;
+}
+
+.card-popup__level {
+    font-size: 1.5rem;
+    color: #989ca0;
+    margin-bottom: 10px;
+}
+
+.modal-card__body {
+    margin: 10px 0;
+}
+
+.card-popup__question-box {
+    background-color: #f2f2f2;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px;
+}
+
+.card-popup__question {
+    color: #989ca0;
+    margin: 15px 0px;
+}
+
+.card-popup__level--dif {
+    color: #efa929;
+}
+
+.question-title {
+    font-size: 1.6rem;
+    color: var(--color-text);
+    margin-bottom: 15px;
+}
+
+    .question-title:last-child {
+        margin-bottom: 10px;
+    }
+
+.modal-card__footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-card__popup {
+    padding: 18px 55px;
+    display: inline-block;
+    font-size: 1.8rem;
+    border: none;
+    outline: none;
+}
+
+.btn-card__popup--pp {
+    background-color: #efa929;
+}*/

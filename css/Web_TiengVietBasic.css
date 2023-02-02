@@ -1,0 +1,56 @@
+﻿/*TiengVietBasic*/
+.tiengvietbasic__heading {
+    text-align: center;
+    color: red;
+}
+
+.tiengvietbasic__title {
+    display: block;
+    font-size: 18px;
+    width: 100%;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.input__tiengvietbasic.mdf {
+    text-align: left;
+}
+
+.tiengvietbasic__title span {
+    color: red;
+}
+
+.tiengvietbasic__box {
+    border: 3px solid #009aff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 25px;
+    margin-bottom: 15px;
+}
+
+.input__tiengvietbasic {
+    border: none;
+    outline: none;
+    border-bottom: 3px dotted #c3c0c0;
+    width: 15%;
+    text-align: left;
+    color: #009aff;
+}
+.baitap2{
+    margin:auto;
+    font-size:20px;
+}
+.baitap2 .input__tiengvietbasic2 {
+    border: none;
+    outline: none;
+    border-bottom: 3px dotted #c3c0c0;
+    width: 5%;
+    text-align: left;
+    color: #009aff;
+}
+.literature__btn{
+    margin:auto;
+    padding:60px;
+    text-align:center;
+}

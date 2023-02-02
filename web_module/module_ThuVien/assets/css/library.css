@@ -1,0 +1,314 @@
+@media screen and (max-width: 600px) {
+    table#cart tbody td .form-control {
+        width: 20%;
+        display: inline !important;
+    }
+    .actions {
+        display: flex;
+    }
+    .actions .btn {
+        width: 36%;
+        margin: 1.5em 0;
+    }
+    .actions .btn-info {
+        float: left;
+    }
+    .actions .btn-danger {
+        float: right;
+    }
+    table#cart thead {
+        display: none;
+    }
+    table#cart tbody td {
+        display: block;
+        padding: .6rem;
+        min-width: 320px;
+    }
+    table#cart tbody tr td:first-child {
+        background: #333;
+        color: #fff;
+    }
+    table#cart tbody td:before {
+        content: attr(data-th);
+        font-weight: bold;
+        display: inline-block;
+        width: 8rem;
+    }
+    table#cart tfoot td {
+        display: block;
+    }
+    table#cart tfoot td .btn {
+        display: block;
+    }
+}
+
+td.date_time {
+    padding-left: 25px;
+}
+
+
+
+/*input*/
+
+/*.container-fluid {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 50px 50px;
+}*/
+
+h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h2 small {
+    font-weight: normal;
+    color: #888;
+    display: block;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer a {
+    color: #53B2C8;
+}
+
+
+/* form starting stylings ------------------------------- */
+
+.group {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+input {
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 276px;
+    border: none;
+    border-bottom: 1px solid #757575;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+input:focus {
+    outline: none;
+}
+
+
+/* LABEL ======================================= */
+
+label {
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+
+/* active state */
+
+input:focus~label,
+input:valid~label {
+    top: -20px;
+    font-size: 14px;
+    color: #5264AE;
+}
+
+
+/* BOTTOM BARS ================================= */
+
+.bar {
+    position: relative;
+    display: block;
+    width: 276px;
+}
+
+.bar:before,
+.bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #5264AE;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+
+/* active state */
+
+input:focus~.bar:before,
+input:focus~.bar:after {
+    width: 50%;
+}
+
+
+/* HIGHLIGHTER ================================== */
+
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+
+/* active state */
+
+input:focus~.highlight {
+    -webkit-animation: inputHighlighter 0.3s ease;
+    -moz-animation: inputHighlighter 0.3s ease;
+    animation: inputHighlighter 0.3s ease;
+}
+
+
+/* ANIMATIONS ================ */
+
+@-webkit-keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@-moz-keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+.input-title {
+    margin-top: 35px;
+}
+
+.table-body {
+    margin-top: 80px;
+}
+
+.nomargin {
+    font-size: 18px;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.time-picker {
+    margin-left: -14px;
+    margin-top: 20px;
+}
+
+.content-title-li {
+    text-align: center;
+}
+
+.app-library {
+    border: 1px solid rgb(255, 72, 0);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    box-shadow: 6px 9px 15px grey
+}
+
+.app-librarys {
+    border: 1px solid rgb(255, 72, 0);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 6px 9px 15px grey;
+    margin-left: 70px;
+}
+
+.apps-library {
+    background-image: url(/assets/img/bgmaths.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    /* opacity: 0.8; */
+    background-size: cover;
+    overflow: hidden;
+}
+
+form.style-form {}
+
+.header-library {
+    padding-top: 20px;
+    color: #dbac69;
+}
+
+h2:after {
+    content: '';
+    display: block;
+    width: 120px;
+    height: 3px;
+    background-color: #dbac69;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.warning {
+   margin:20px 0 20px 0;
+}
+
+.icon-warning {
+    color: red;
+}
+
+.muonsach {
+    margin-bottom: 10px;
+}
+
+td.td_img {
+    padding-left: 60px;
+}
+
+.table-bordered th {
+    border: 1px solid #f7690a;
+}
+
+.table-bordered td {
+    border: 1px solid #f7690a;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 1px solid #f7690a;
+}
+
+.table-2 {
+    display: none;
+}

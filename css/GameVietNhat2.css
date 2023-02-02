@@ -1,0 +1,215 @@
+﻿.container-fluid {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../imgsGameVietNhat/Hinhnen118d.jpg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+    .container-fluid .logo {
+        display: block;
+        width: 140px;
+        height: 100px;
+        position: absolute;
+        right: 78px;
+        top: 53px;
+    }
+
+        .container-fluid .logo img {
+            width: 100%;
+            height: auto;
+        }
+
+    .container-fluid .title {
+        display: block;
+        position: absolute;
+        left: 31%;
+        top: 42px;
+        font-size: 48px;
+        font-weight: bold;
+        text-shadow: 8px 9px 7px burlywood;
+        color: brown;
+        font-family: 'Abril Fatface', cursive;
+    }
+
+        .container-fluid .title b {
+            color: orangered;
+        }
+
+    .container-fluid .khung {
+        width: 300px;
+        height: 300px;
+        width: 300px;
+        height: 300px;
+        background: violet;
+        position: absolute;
+        /* top: 135px; */
+        /* left: 615px; */
+        top: 20.5%;
+        left: 45%;
+    }
+
+    .container-fluid .box1 {
+        width: 150px;
+        height: 150px;
+        /* position: absolute; */
+        /* left: 45%; */
+        border: 1px solid green;
+        /* top: 136px; */
+    }
+
+    .container-fluid .box2 {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        /* left: 56%; */
+        border: 1px solid green;
+        /* top: 136px; */
+        right: 0;
+        top: 0;
+    }
+
+    .container-fluid .box3 {
+        width: 150px;
+        height: 150px;
+        /* position: absolute; */
+        left: 45%;
+        border: 1px solid green;
+        bottom: 231px;
+    }
+
+    .container-fluid .box4 {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        /* left: 56%; */
+        right: 0;
+        border: 1px solid green;
+        /* bottom: 231px; */
+        bottom: 0;
+    }
+
+    .container-fluid a.box4:hover,
+    .container-fluid a.box3:hover,
+    .container-fluid a.box2:hover,
+    .container-fluid a.box1:hover {
+        transform: scale(1.2);
+        z-index: 100;
+    }
+
+    .container-fluid .box4 p,
+    .container-fluid .box3 p,
+    .container-fluid .box2 p,
+    .container-fluid .box1 p {
+        text-align: center;
+        color: brown;
+        font-weight: bold;
+        line-height: 135px;
+    }
+
+    .container-fluid a.box1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 150px;
+        height: 150px;
+        line-height: 129px;
+        font-size: 45px;
+        font-weight: bold;
+        transition: 0.6s ease-in-out;
+    }
+
+    .container-fluid a.box4,
+    .container-fluid a.box3,
+    .container-fluid a.box2 {
+        line-height: 129px;
+        font-size: 45px;
+        font-weight: bold;
+        color: white;
+        transition: 0.6s ease-in-out;
+    }
+
+    .container-fluid a.box3 {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    .container-fluid .question {
+        position: absolute;
+        bottom: 44%;
+        left: 14%;
+    }
+
+        .container-fluid .question p {
+            font-size: 24px;
+            font-weight: bold;
+            color: brown;
+        }
+/* Coding Time */
+#ssss,
+#sss,
+#ss,
+#s {
+    display: block;
+    width: 89px;
+    height: 80px;
+    text-align: center;
+    line-height: 65px;
+    border-radius: 123px;
+    font-size: 60px;
+    color: firebrick;
+}
+
+.times {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border-top: 10px solid red;
+    position: relative;
+    animation: quay 2s linear infinite;
+}
+
+    .times::before, .times::after {
+        content: '';
+        width: 90px;
+        height: 90px;
+        position: absolute;
+        top: -1px;
+        left: 1px;
+        border-radius: 50%;
+    }
+
+    .times::before {
+        border-top: 10px solid green;
+        transform: rotate(120deg);
+    }
+
+    .times::after {
+        border-top: 10px solid yellow;
+        transform: rotate(240deg);
+    }
+
+    .times span {
+        animation: quay2 2s linear infinite;
+    }
+
+@keyframes quay {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes quay2 {
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+.timesplace {
+    position: absolute;
+    top: 24%;
+    left: 17%;
+}

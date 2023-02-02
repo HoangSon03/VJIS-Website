@@ -1,0 +1,192 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Wensite_MasterPage2.master.cs" Inherits="Wensite_MasterPage2" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Trường Mầm non Việt Nhật</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="assets/css/navbar.css" rel="stylesheet" />
+    <link href="assets/css/base.css" rel="stylesheet" />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="icon" type="image/x-icon" href="/admin_images/logo_mamnon.png" />
+    <link href="assets/css/popup-gopy.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/55af28d6d7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <div class="clogo">
+                <img src="/assets/img/logo.png" alt="" id="logo">
+            </div>
+        </header>
+        <nav class="nav-main">
+            <input type="checkbox" name="" id="bc1">
+            <label for="bc1" class="btn">
+                <i class='bx bx-menu-alt-left'></i>
+            </label>
+            <!-- <label class="logo"><img src="/assets/img/logo.png"  alt="" id="logo_sub"></label> -->
+            <div class="clogo_sub">
+                <img src="/assets/img/logo.png" alt="" id="logo_sub">
+            </div>
+            <ul>
+                <li><a href="web_TrangChu.aspx">Trang chủ</a></li>
+                <li><a href="web_GioiThieu.aspx">Giới thiệu</a></i>
+                <ul class="ul_sub">
+                    <li><a href="#">Giới thiệu VJIS </a></li>
+                    <li><a href="#">Cố vấn - tổ chức</a></li>
+                    <li><a href="#">Tầm nhìn sứ mệnh</a></li>
+                    <li><a href="#">Tuyển dụng</a></li>
+                </ul>
+                </li>
+                <li><a href="#chuongtrinhhoc">Chương trình học</a>
+                    <ul class="ul_sub">
+                        <li><a href="#">Học năng kiếu</a></li>
+                        <li><a href="#">Chương trình dã ngoại</a></li>
+                        <li><a href="#">Học kỹ năng</a></li>
+                    </ul>
+                    <li><a href="web_TinTuc.aspx">Tin tức</a>
+                        <ul class="ul_sub">
+                            <li><a href="#">Thông báo</a></li>
+                            <li><a href="#">Sự kiện</a></li>
+                            <li><a href="#">Tin tức giáo dục</a></li>
+                        </ul>
+                    </li>
+                <li><a href="#">Hình ảnh</a>
+                    <ul class="ul_sub">
+                        <li><a href="#">Hoạt động của bé</a></li>
+                        <li><a href="#">Hoạt động giáo viên</a></li>
+                        <li><a href="#">Tác phẩm của b</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Cảm nhận về VJIS</a></li>
+                <li><a href="#">Đội ngủ giáo viên</a></li>
+                <li><a href="#">Học tập</a></li>
+                <li onclick="popup_hopthu()"><a href="#">Hộp thư góp ý</a></li>
+                <li><a href="#">Thực đơn</a></li>
+                <li id="btndangnhap" style="transform: translateX(44px);"><p class="btn-dangnhap" onclick="openForm()" href="#">Đăng nhập</p></li>
+                <li id="afterlogin" style="display:none" class="icon-user" ><i class="fa-solid fa-user iconuser    "></i>
+                    <p class="tenuser"> nguyễn văn linh</p>
+                    
+                    <ul class="ul_sub btnavt">
+                        <li><a href="#">Thông tin tài khoản</a></li>
+                        <li class="divider"></li>
+                        <li><a href="vietnhatkids_ThongKe.aspx  ">Hồ sơ tài khoản</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Đăng xuất</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <!--popup hộp hư góp ý-->
+        <div id="from-popup">
+            <button class="btn-close"><i class='bx bx-x'></i></button>
+            <h1>Hộp thư góp ý</h1>
+            <table>
+                <tr>
+                    <td>
+                        <h6>Họ tên</h6>
+                        <input type="text" name="name" value="" />
+                    </td>
+                    <td>
+                        <h6>E-mail</h6>
+                        <input type="text" name="name" value="" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h6>Điện thoại</h6>
+                        <input type="text" name="name" value="" />
+                    </td>
+                    <td>
+                        <h6>Chủ đề</h6>
+                        <input type="text" name="name" value="" />
+                    </td>
+                </tr>
+            </table>
+            <h6 style="text-align: center;">Nội dung</h6>
+            <textarea></textarea>
+            <button class="submit">Gởi</button>
+        </div>
+        <%--popup đăng nhập--%>
+        <div class="abcc" id="myForm">
+            <div class="form-popup" >
+                <div action="/action_page.php" class="form-container">
+                    <span class="close" onclick="closeForm()">&times;</span>
+                    <h1>Đăng nhập</h1>
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Nhập Email" name="email" required>
+
+                    <label for="psw"><b>Mật khẩu</b></label>
+                    <input type="password" placeholder="Nhập mật khẩu" name="psw" required>
+
+                    <button type="submit" id="btnlogin" class="btn-login">Login</button>
+                </div>
+
+            </div>
+
+        </div>
+        <footer>
+            <button onclick="topFunction()" id="btnScrollTop" title="Go to top"><i class='bx bxs-chevron-up'></i></button>
+            <div class="fcontent">
+                <div class="f-img">
+                    <img src="/assets/img/logo.png" alt="">
+                </div>
+                <h3>Trường liên thông quốc tế Việt Nhật</h3>
+                <h4>231/5 Lê Duẩn, Tân Chính, Thanh Khê, Đà Nẵng</h4>
+                <h5>Điện thoại: 02363 827 272</h5>
+            </div>
+            <div class="copyRight">
+                © 2018 Trường liên thông quốc tế Việt Nhật (VJIS). All rights reserved.
+            </div>
+        </footer>
+    </form>
+</body>
+<%--<script src="/assets/js/base.js"></script>--%>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+    function popup_hopthu() {
+        document.getElementById("from-popup").style.display = 'block';
+    };
+    const swiper = new Swiper('.swiper', {
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+        window.onclick = function (event) {
+            if (event.target == myForm) {
+                myForm.style.display = "none";
+            }
+        }
+        btnlogin.onclick = function (event) {
+            btndangnhap.style.display = "none";
+            afterlogin.style.display = "inline-block";
+        }
+
+    </script>
+</html>

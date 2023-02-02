@@ -1,0 +1,51 @@
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .input_text {
+        width: 215px;
+    }
+    .bar {
+        width: 215px;
+    }
+    form.style-form {
+        padding-left: 0;
+    }
+    td.td_img {
+        padding-left: 30px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .time-picker {
+        width: 65%;
+    }
+    .app-librarys {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .input-title {
+        padding-left: 30%;
+    }
+    
+}
+
+@media (max-width: 767.98px) {
+    .table-body.table-1 {
+        display: none;
+    }
+    .app-librarys {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    input {
+        width: 300px;
+    }
+    .bar {
+        width: 235px;
+    }
+    .table-2 {
+        display: block;
+    }
+    .table td,
+    .table th {
+        padding: .25rem;
+    }
+}

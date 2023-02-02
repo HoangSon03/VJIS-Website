@@ -1,0 +1,811 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="WebSiteMasterPage.master.cs" Inherits="WebSiteMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <%--Meta--%>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Trường Liên Cấp Việt Nhật" />
+    <meta name="keywords" content="Trường Liên Cấp Việt Nhật and Trường Mầm Non Việt Nhật" />
+    <meta name="author" content="Mầm Non Việt Nhật" />
+    <title>Hệ Thống Trường Việt Nhật</title>
+    <!-- Fontanwsome -->
+    <script src="https://kit.fontawesome.com/f41ccfc950.js" crossorigin="anonymous"></script>
+
+    <!--faicon-->
+    <link type="image/png" href="image/logo.png" rel="shortcut icon" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <%--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />--%>
+    <link href="web_module/module_ThuVien/assets/css/library1.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/fontawesome.css" />
+    <link rel="stylesheet" href="/css/fontawesome.min.css" />
+    <link href="/css/animate.css" rel="stylesheet" />
+    <link href="/css/slick.css" rel="stylesheet" />
+    <link href="/css/slick-theme.css" rel="stylesheet" />
+    <link href="/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="/css/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="/css/nanogallery2.min.css" rel="stylesheet" />
+    <link href="/css/magnific-popup.css" rel="stylesheet" />
+    <link href="/css/jquery.fancybox.min.css" rel="stylesheet" />
+    <link href="/css/gamebasic.css" rel="stylesheet" />
+    <%--<link href="css/swiper-bundle.min.css" rel="stylesheet" />--%>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link href="/css/trangchu_test.css" rel="stylesheet" />
+    <link href="/css/responsive_test.css" rel="stylesheet" />
+    <script src="/admin_js/sweetalert.min.js"></script>
+    <link href="css/web_GameGiaiCuu.css" rel="stylesheet" />
+    <!--font-->
+    <link href="/css/fontsface.css" rel="stylesheet" />
+    <!--Dung-->
+    <%--<link href="css/styleCSSGame.css" rel="stylesheet" />--%>
+    <!--wowjs-->
+    <script src="/js/wow.js"></script>
+    <script src="/js/wow.min.js"></script>
+    <!--slide-->
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <!-- Google Tag Manager -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0N79L6C7DR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-0N79L6C7DR');
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- Google Tag Manager -->
+    <%-- <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-THVW85W');</script>--%>
+    <!-- End Google Tag Manager -->
+    <asp:ContentPlaceHolder ID="headlink" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-558GPV4"
+            height="0" width="0" style="display: none; visibility: hidden"></iframe>
+    </noscript>
+    <!-- Google Tag Manager (noscript) -->
+    <%-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-THVW85W"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>--%>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- End Google Tag Manager (noscript) -->
+    <form id="form1" runat="server">
+        <!-- Google Tag Manager (noscript) -->
+        <div class="mainpage-main" id="blur">
+            <a href="tel:02363827272">
+                <i class="Phone is-animating"></i>
+            </a>
+            <asp:ContentPlaceHolder ID="hihead" runat="server">
+            </asp:ContentPlaceHolder>
+            <div class="hiheader" style="display: none">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-6 register-add__none--top">
+                        </div>
+                        <div class="register-add__rezie col-lg-5 col-md-6 col-sm-7 hidden-xs">
+                            <div class="title-hiheader">
+                                <h4>Hệ Thống giáo dục Việt Nhật</h4>
+                            </div>
+                        </div>
+                        <div class="register-add__rezie col-lg-4 col-md-4 col-sm-2 col-12">
+                            <div class="irs-social irs-center-2 text-right register-add__modify">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <asp:ContentPlaceHolder ID="himenu" runat="server">
+            </asp:ContentPlaceHolder>
+            <div class="modal fade bd-example-modal-lg bd-gegister__add" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">Đăng Ký Thêm</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="register-add">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-12">
+                                        <div class="register-add__group">
+                                            <h4 class="register-add__title">Đăng Ký Đồng Phục
+                                            </h4>
+                                            <div class="register-add__inner">
+                                                <div class="register-add__group">
+                                                    <div class="form-group">
+                                                        <label class="register-add__label">- Đi học: </label>
+                                                        <input class="register-add__input" type="text" name="name" value="" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="register-add__label">- Thể dục: </label>
+                                                        <input class="register-add__input" type="text" name="name" value="" />
+                                                    </div>
+                                                </div>
+                                                <div class="register-add__check">
+                                                    <label class="register-add__labelcheck" for="yes">Có</label>
+                                                    <input class="register-add__checked" type="radio" name="check" id="yes" />
+                                                    <br />
+                                                    <label class="register-add__labelcheck" for="no">Không</label>
+                                                    <input class="register-add__checked" type="radio" name="check" id="no" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="register-add__group">
+                                            <h4 class="register-add__title">Đăng Ký Bảo Hiểm
+                                            </h4>
+                                            <div class="register-add__inner">
+                                                <div class="register-add__group">
+                                                    <div class="form-group">
+                                                        <label class="register-add__label">- Bảo Hiểm Y Tế bắt buộc 260.000đ/năm </label>
+                                                        <label class="register-add__label">Nơi đăng ký khám chữa bệnh </label>
+                                                        <input class="register-add__input" type="text" name="name" value="" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="register-add__label">
+                                                            - Bảo Hiểm Tai Nạn tự nguyện không bắt buộc 150.000đ/năm
+                                                (Bảo Hiểm tai nạn hàng không)
+                                                        </label>
+
+                                                    </div>
+                                                </div>
+                                                <div class="register-add__check">
+                                                    <label class="register-add__labelcheck" for="yesNext">Có</label>
+                                                    <input class="register-add__checked" type="radio" name="check" id="yesNext" />
+                                                    <br />
+                                                    <label class="register-add__labelcheck" for="noNext">Không</label>
+                                                    <input class="register-add__checked" type="radio" name="check" id="noNext" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-12">
+                                        <div class="register-add__group">
+                                            <div class="register-add__inner">
+
+                                                <div class="register-add__group">
+                                                    <label class="register-add__label">- Đăng Ký ăn sáng tại trường </label>
+                                                    <label class="register-add__label">- Đăng Ký đi xe đưa đón </label>
+
+                                                </div>
+                                                <div class="register-add__check">
+                                                    <label class="register-add__labelcheck" for="yesFinal">Có</label>
+                                                    <input class="register-add__checked" type="radio" name="check" id="yesFinal" />
+                                                    <br />
+                                                    <label class="register-add__labelcheck" for="noFinal">
+                                                        Không
+                                                    </label>
+                                                    <input class="register-add__checked" type="radio" name="check" id="noFinal" />
+
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="register-add__label" style="display: block;">
+                                                    - Ghi Chú
+                                                </label>
+                                                <textarea id="textFormadd" placeholder="Ghi Chú"></textarea>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <%--menu mới--%>
+            <header class="header">
+                <div class="heading__contents">
+                    <span class="title__heading">HỆ THỐNG GIÁO DỤC VIỆT NHẬT</span>
+
+                </div>
+            </header>
+            <div class="navigation-wrap bg-light start-header start-style">
+                <div class="container-fuld">
+                    <nav class="navbar navbar-expand-md navbar-light" style="display: flex; padding: 0">
+                        <a class="navbar-brand col-lg-1 col-md-1 col-sm-2 col-2" href="/trang-chu">
+                            <img src="/image/logo.png" alt="" /></a>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <%--<span> </span><span><a href="#">Đăng ký tuyển sinh</a></span>--%>
+                            <ul class="navbar-nav py-4 py-md-0 menu__menu">
+                                <asp:Repeater runat="server" ID="rpMenu" OnItemDataBound="rpMenu_ItemDataBound">
+                                    <ItemTemplate>
+                                        <li class="nav-item nav-item-mb pl-4 pl-md-0 ml-0 ml-md-4">
+                                            <a class="nav-link dropdown-toggle" style="color: red" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><%#Eval("websitemenu_title") %></a>
+                                            <div class="dropdown-menu">
+                                                <asp:Repeater ID="rpSubMenu" runat="server">
+                                                    <ItemTemplate>
+                                                        <a class="dropdown-item" href="../../<%#cls_ToAscii.ToAscii(Eval("websitemenu_title").ToString()) %>/<%#cls_ToAscii.ToAscii(Eval("websitesubmenu_title").ToString()) %>-<%#Eval("websitesubmenu_id") %>"><%#Eval("websitesubmenu_title") %></a>
+                                                    </ItemTemplate>
+                                                </asp:Repeater>
+                                            </div>
+                                        </li>
+                                    </ItemTemplate>
+                                </asp:Repeater>
+                                <li class="nav-item nav-item-mb pl-4 pl-md-0 ml-0 ml-md-4">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Tin Tức</a>
+                                    <div class="dropdown-menu">
+                                        <asp:Repeater ID="rpNewCate" runat="server">
+                                            <ItemTemplate>
+                                                <a class="dropdown-item" href="/tin-tuc/<%#cls_ToAscii.ToAscii(Eval("newscate_title").ToString()) %>-<%#Eval("newscate_id") %>"><%#Eval("newscate_title") %></a>
+                                            </ItemTemplate>
+                                        </asp:Repeater>
+                                    </div>
+                                </li>
+                                <li class="nav-item nav-item-mb pl-4 pl-md-0 ml-0 ml-md-4">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Thư Viện</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="/thu-vien-sach">Sách</a>
+                                        <a class="dropdown-item" href="/thu-vien-hinh-anh">Thư Viện Ảnh</a>
+                                        <a class="dropdown-item" href="/thu-vien-video">Thư Viện Video</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item nav-item-mb pl-4 pl-md-0 ml-0 ml-md-4">
+                                    <a class="register__link" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeq26VkY_2cvj_u9vlbSekIvuA-zU5WW4UFDqHcLUQSA55QDA/viewform">Đăng ký tuyển sinh</a>
+                                </li>
+                                <li class="nav-item nav-item-mb pl-4 pl-md-0 ml-0 ml-md-4">
+                                    <a class="register__link" href="/thuc-don-hang-tuan">Thực đơn hàng tuần</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul>
+                            <li class="nav-item-mb pl-4 pl-md-0 ml-0 ml-md-4" style="margin-top: 5px;">
+                                <a id="btnLogin" runat="server" href="javascript:void(0)" data-toggle="modal" style="color: #b51a1a !important; font-weight: 500; transition: all 200ms linear;" data-target="#login">Đăng nhập</a>
+
+                                <div id="dv_Account" runat="server" class="account">
+                                    <a style="color: var(--color-primary-light); font-weight: 600" href="#">Xin Chào  <%=nameStudent%></a>
+                                    <div class="account-top">
+
+                                        <div class="account-top__name" style="display: none">
+                                            <a style="color: var(--color-primary-light)" href="../../account-manager">Hồ sơ học sinh</a>
+                                        </div>
+                                        <div class="account-top__name" style="display: none">
+                                            <a style="color: var(--color-primary-light)" href="../../bai-tap">Bài tập</a>
+                                        </div>
+                                        <div class="account-top__name">
+                                            <a style="color: var(--color-primary-light)" href="#" id="btnLogout" runat="server" onserverclick="Logout_ServerClick">Log Out</a>
+                                            <input id="txtHocSinh" runat="server" type="text" style="display: none" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="navigation-wrap bg-light start-header start-style" style="display: none">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <nav class="navbar navbar-expand-md navbar-light">
+                                <a class="navbar-brand" href="/trang-chu">
+                                    <img src="/images/logovn-2295.png" alt="" /></a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse">
+                                    <ul class="navbar-nav ml-auto py-4 py-md-0">
+                                        <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active">
+                                            <a class="nav-link" href="/trang-chu">Trang Chủ</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <asp:ContentPlaceHolder ID="higlobal" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <asp:ContentPlaceHolder ID="hislider" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <asp:ContentPlaceHolder ID="hibelowtop" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <asp:ContentPlaceHolder ID="hibodyhead" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <asp:ContentPlaceHolder ID="hibodywrapper" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <div class="popup-login" id="popup-lg">
+                <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Đăng Nhập</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="content-login">
+                                    <div class="form-login">
+                                        <input type="radio" name="#" value="mn" id="rdManNon" />
+                                        <label for="mn">Mầm non</label><br>
+                                        <input type="radio" name="#" id="rdLienCap" value="lc" />
+                                        <label for="lc">TH,THCS,THPT</label><br>
+                                        <div class="form-group">
+                                            <input type="text" id="txtMaHocSinh" runat="server" name="name" value="" placeholder="Mã học sinh" autocomplete="off" />
+                                        </div>
+                                        <div class="dangnhap">
+                                            <a href="#" id="btnDangNhap" style="color: #ffeb3b !important; font-weight: 500; transition: all 200ms linear;" runat="server" onserverclick="btnDangNhap_ServerClick">Đăng nhập</a>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <asp:ContentPlaceHolder ID="hibodybottom" runat="server">
+            </asp:ContentPlaceHolder>
+            <button class="btn-scrolltop" type="button" onclick="scrollTopAnimated()"><span><i class="fas fa-chevron-up"></i></span></button>
+            <asp:ContentPlaceHolder ID="hibelowbottom" runat="server">
+            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="hifooter" runat="server">
+            </asp:ContentPlaceHolder>
+            <section class="section-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                            <div class="chinhanh-footer">
+                                <h4 class="title-footer">Giáo dục ,Việt Nhật
+                                </h4>
+                            </div>
+                            <div class="tabs-footer">
+                                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                    <asp:Repeater ID="rpLienHe" runat="server">
+                                        <ItemTemplate>
+                                            <a class="nav-footer <%#Eval("active") %>" id="<%#Eval("lh_classid2") %>" data-toggle="pill" href="#<%#Eval("lienhe_classid") %>" role="tab" aria-controls="<%#Eval("lienhe_classid") %>" aria-selected="true">
+                                                <div class="school-icon"><i class="fas fa-school"></i></div>
+                                                &nbsp;<%#Eval("lienhe_title") %><span><i class="far fa-hand-point-right"></i></span></a>
+                                        </ItemTemplate>
+                                    </asp:Repeater>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-12 col-12">
+                            <div class="tab-show">
+                                <%--   <h4 class="title-footer">LIÊN CẤP VIỆT NHẬT</h4>--%>
+                                <div class="tab-content" id="v-pills-tabContent">
+                                    <asp:Repeater runat="server" ID="rpInformation">
+                                        <ItemTemplate>
+                                            <div class="tab-pane fade show <%#Eval("active") %>" id="<%#Eval("lienhe_classid") %>" role="tabpanel" aria-labelledby="<%#Eval("lh_classid2") %>">
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                                        <div class="tab-footer">
+                                                            <h4 class="title-footer"><%# Eval("lienhe_title")%></h4>
+                                                            <p><%#Eval("lienhe_address") %></p>
+                                                            <p>Điện thoại:<%# Eval("lienhe_phone")%></p>
+                                                        </div>
+                                                        <div class="camket">
+                                                            <h4>Kết nối</h4>
+                                                            <div>
+                                                                <ul>
+                                                                    <li><a href="#"><i class="fa fa-2x fa-facebook-square" aria-hidden="true"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-2x fa-google-plus-official" aria-hidden="true"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-2x fa-youtube" aria-hidden="true"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-2x fa-instagram" aria-hidden="true"></i></a></li>
+                                                                    <li></li>
+                                                                    <li><a href="#"><i class="fa fa-2x fa-twitter" aria-hidden="true"></i></a></li>
+                                                                    <%-- <li><span>Đào tạo <b>chất lượng</b></span></li>
+                                                                    <li><span>Tư vấn <b>nhiệt tình</b></span></li>
+                                                                    <li><span>Dịch vụ <b>tốt nhất</b></span></li>
+                                                                    <li><span>Hỗ trợ <b>suốt đời</b></span></li>--%>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                                        <div class="map">
+                                                            <iframe src="<%#Eval("lienhe_map") %>" width="350" height="175" frameborder="0" style="border: 0;" allowfullscreen=""></iframe>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </ItemTemplate>
+                                    </asp:Repeater>
+
+                                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
+                                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <!--menu-->
+                        <script>
+                            $(window).scroll(function () {
+                                if ($(this).scrollTop() > 90) {
+
+                                    $('.navigation-wrap').addClass('fixed-top');
+                                } else {
+
+                                    $('.navigation-wrap').removeClass('fixed-top');
+                                }
+                            });
+                        </script>
+                    </div>
+                </div>
+            </section>
+            <script>
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 90) {
+
+                        $('.navigation-wrap').addClass('fixed-top');
+                    } else {
+
+                        $('.navigation-wrap').removeClass('fixed-top');
+                    }
+                });
+            </script>
+
+            <!-- Load Facebook SDK for JavaScript -->
+            <div id="fb-root"></div>
+            <script>
+                window.fbAsyncInit = function () {
+                    FB.init({
+                        xfbml: true,
+                        version: 'v10.0'
+                    });
+                };
+
+                (function (d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                    js = d.createElement(s); js.id = id;
+                    js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+                    fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));</script>
+
+            <!-- Your Chat Plugin code -->
+            <div class="fb-customerchat"
+                attribution="setup_tool"
+                page_id="179733322233652">
+            </div>
+            <!-- Tab panes -->
+            <!--End Hifooter-->
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <!-- <script src="js/jquery-3.4.1.min.js"></script> -->
+            <script>
+                $('.owl-carousel').owlCarousel({
+                    loop: true,
+                    margin: 10,
+                    nav: false,
+                    autoplay: true,
+                    autoplayTimeout: 3000,
+                    autoplayHoverPause: true,
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        600: {
+                            items: 1
+                        },
+                        1000: {
+                            items: 1
+                        }
+                    }
+                })
+            </script>
+            <script src="/js/jquery-1.11.0.min.js"></script>
+            <script src="/js/jquery-migrate-1.2.1.min.js"></script>
+            <script src="/js/slick.min.js"></script>
+            <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+            <script src="/js/fontawesome.js"></script>
+            <script src="/js/fontawesome.min.js"></script>
+            <script src="/js/jquery.nanogallery2.min.js"></script>
+            <script src="/js/jquery.magnific-popup.js"></script>
+            <script src="/js/jquery.fancybox.min.js"></script>
+            <script src="/js/isotop.js"></script>
+            <%--<script src="js/swiper-bundle.min.js"></script>--%>
+            <script src="/js/jQuery.loadScroll.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+            <script type="text/javascript">
+                function scrollTopAnimated() {
+                    $("html, body").animate(
+                        { scrollTop: "0" }, 1500);
+                }
+            </script>
+            <%--Video--%>
+            <script>
+                $(document).ready(function () {
+                    $('.fancybox').fancybox({
+                        padding: 0,
+                        maxWidth: '100%',
+                        maxHeight: '100%',
+                        width: 560,
+                        height: 315,
+                        autoSize: true,
+                        closeClick: true,
+                        openEffect: 'elastic',
+                        closeEffect: 'elastic'
+                    });
+                });
+            </script>
+            <%--Gallery--%>
+            <script>
+                $(document).ready(function () {
+                    $('.gallery-image').magnificPopup({
+                        delegate: 'a',
+                        type: 'image',
+                        tLoading: 'Loading image #%curr%...',
+                        mainClass: 'mfp-img-mobile',
+                        gallery: {
+                            enabled: true,
+                            navigateByImgClick: true,
+                            preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+                        },
+                        image: {
+                            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+                            titleSrc: function (item) {
+                                return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
+                            }
+                        }
+                    });
+                });
+            </script>
+            <script>
+                $(document).ready(function () {
+                    $('.filters-content').magnificPopup({
+                        delegate: 'a',
+                        type: 'image',
+                        tLoading: 'Loading image #%curr%...',
+                        mainClass: 'mfp-img-mobile',
+                        gallery: {
+                            enabled: true,
+                            navigateByImgClick: true,
+                            preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+                        },
+                        image: {
+                            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+                            titleSrc: function (item) {
+                                return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
+                            }
+                        }
+                    });
+                });
+            </script>
+            <%--Góc Phụ Huynh - Cảm Nghĩ Học Sinh--%>
+            <script>
+                $('.feeling__slide').slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: false,
+                    autoplaySpeed: 2000,
+                    arrows: false,
+                });
+
+            </script>
+            <!--Đối tác-->
+            <script>
+                $('.autoplay').slick({
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    autoplay: false,
+                    autoplaySpeed: 2000,
+                    arrows: false,
+                    responsive: [
+                        {
+                            breakpoint: 1024,
+                            settings: {
+                                slidesToShow: 3,
+                                slidesToScroll: 3,
+                                infinite: true,
+                                dots: true
+                            }
+                        },
+                        {
+                            breakpoint: 767,
+                            settings: {
+                                slidesToShow: 2,
+                                slidesToScroll: 2
+                            }
+                        },
+                        {
+                            breakpoint: 480,
+                            settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1
+                            }
+                        }
+                        // You can unslick at a given breakpoint now by adding:
+                        // settings: "unslick"
+                        // instead of a settings object
+                    ]
+                });
+            </script>
+            <!--Đối tác-->
+            <!--Menu-->
+            <script>
+                (function ($) {
+                    "use strict";
+
+                    $(function () {
+                        var header = $(".start-style");
+                        $(window).scroll(function () {
+                            var scroll = $(window).scrollTop();
+
+                            if (scroll >= 10) {
+                                header.removeClass('start-style').addClass("scroll-on");
+                            } else {
+                                header.removeClass("scroll-on").addClass('start-style');
+                            }
+                        });
+                    });
+
+                    //Animation
+
+                    $(document).ready(function () {
+                        $('body.hero-anime').removeClass('hero-anime');
+                    });
+
+                    //Menu On Hover
+
+                    $('body').on('mouseenter mouseleave', '.nav-item', function (e) {
+                        if ($(window).width() > 750) {
+                            var _d = $(e.target).closest('.nav-item'); _d.addClass('show');
+                            setTimeout(function () {
+                                _d[_d.is(':hover') ? 'addClass' : 'removeClass']('show');
+                            }, 1);
+                        }
+                    });
+
+                    //Switch light/dark
+
+                    $("#switch").on('click', function () {
+                        if ($("body").hasClass("dark")) {
+                            $("body").removeClass("dark");
+                            $("#switch").removeClass("switched");
+                        }
+                        else {
+                            $("body").addClass("dark");
+                            $("#switch").addClass("switched");
+                        }
+                    });
+
+                })(jQuery);
+            </script>
+            <script>
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 80) {
+
+                        $('.navigation-wrap').addClass('fixed-top');
+                    } else {
+
+                        $('.navigation-wrap').removeClass('fixed-top');
+                    }
+                });
+            </script>
+
+            <!--Menu-->
+            <!--Mầm Non-->
+            <script>
+                $('.slide-autoplay-mamnon').slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                });
+            </script>
+            <%--Trung Học--%>
+            <script>
+                $('.slide-autoplay-trunghoc').slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                });
+            </script>
+            <script>
+                $('.news-autoplay-default').slick({
+                    dots: true,
+                    infinite: false,
+                    speed: 300,
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    responsive: [
+                        {
+                            breakpoint: 1024,
+                            settings: {
+                                slidesToShow: 3,
+                                slidesToScroll: 3,
+                                infinite: true,
+                                dots: true
+                            }
+                        },
+                        {
+                            breakpoint: 992,
+                            settings: {
+                                slidesToShow: 2,
+                                slidesToScroll: 1
+                            }
+                        },
+                        {
+                            breakpoint: 768,
+                            settings: {
+                                slidesToShow: 2,
+                                slidesToScroll: 1
+                            }
+                        },
+                        {
+                            breakpoint: 812,
+                            settings: {
+                                slidesToShow: 2,
+                                slidesToScroll: 1
+                            }
+                        },
+                        {
+                            breakpoint: 480,
+                            settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1
+                            }
+                        }
+                        // You can unslick at a given breakpoint now by adding:
+                        // settings: "unslick"
+                        // instead of a settings object
+                    ]
+                });
+            </script>
+            <!--Mầm non-->
+            <!--wowjs-->
+            <script type="text/javascript">
+                new WOW().init();
+            </script>
+            <!--wowjs-->
+            <%--Gallery--%>
+            <script>
+                $('.filters ul li').click(function () {
+                    $('.filters ul li').removeClass('active');
+                    $(this).addClass('active');
+
+                    var data = $(this).attr('data-filter');
+                    $grid.isotope({
+                        filter: data
+                    })
+                });
+
+                var $grid = $(".grid").isotope({
+                    itemSelector: ".all",
+                    percentPosition: true,
+                    masonry: {
+                        columnWidth: ".all"
+                    }
+                })
+            </script>
+            <%--End gallery--%>
+            <asp:ContentPlaceHolder ID="hifootersite" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

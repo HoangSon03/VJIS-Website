@@ -1,0 +1,387 @@
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .tab {
+        /* padding: 1.5rem; */
+    }
+    .tab_reponsive {
+        margin-left: 17px;
+    }
+    .student_blog {
+        margin-left: 60px;
+    }
+    .home__product {
+        padding-left: 0;
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .tab-list {
+        display: none;
+    }
+    .tab_reponsive {
+        margin-left: -34px;
+        margin-right: -15px;
+    }
+    .header_list {
+        display: block;
+    }
+    .nav-mobile {
+        display: block;
+    }
+    .home__product {
+        padding-left: 22px;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 739px) {
+    .tab-list {
+        display: none;
+    }
+    .student_blog {
+        margin-left: -31px;
+        width: 363px;
+    }
+    .header_list {
+        display: block;
+        width: 106%;
+        height: 58px;
+        background-color: rgb(212, 212, 209);
+        margin-left: -11%;
+        margin-top: -8px;
+        position: fixed;
+        z-index: 3;
+    }
+    .nav-mobile {
+        display: block;
+        width: 220px;
+    }
+    .home__product {
+        margin-top: 40px;
+        padding-left: 0;
+    }
+    .teacher_blog {
+        margin-left: 20px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 568px) {
+    .teacher_blog {
+        margin-left: 13px;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 667px) {
+    .teacher_blog {
+        margin-left: 20px;
+    }
+    .home__product {
+        margin-top: 40px;
+    }
+}
+
+@media (min-width: 414px) and (max-width: 736px) {
+    .teacher_blog {
+        margin-left: 40px;
+    }
+    .student_blog {
+        margin-left: -12px;
+        width: 363px;
+    }
+    .home__products {
+        margin-top: 40px;
+    }
+}
+/*------------------------------END reponsive - Trường*/ 
+/*----tablet pro*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .menu__menu{
+        margin-right: 5px;
+    }
+    .sub-rank img{
+        margin-left: 18px;
+    }
+    .box-slide .sub-box-1{
+        width: 870px;
+        height: 410px;
+        top: 30px;
+    }
+    .box-slide .sub-box-1 > .sub-slide{
+        width: 530px;
+    }
+    .box-slide .sub-box-1 > .sub-slide .carousel-inner .h-100{
+        height: 350px !important;
+    }
+    .title-csvc{
+        left: 570px;
+        width: 280px;
+    }
+    .box-slide .sub-box-1 .title-csvc > p {
+        min-height: 240px;
+    }
+    .box-slide .sub-box-1 .title-csvc > a{
+        margin-left: 170px;
+    }
+    .box-slide .sub-box-1.sub-1 > .sub-slide{
+        left: 320px;
+    }
+    .box-slide .sub-box-1.sub-1{
+        top: 480px;
+    }
+    .box-slide .sub-box-1.sub-2{
+        top: 930px;
+    }
+    .box-slide{
+        width: 100%;
+        height:102vh;
+    }
+    .englsih > img{
+        width: 450px;
+        height: 350px;
+    }
+    .japan > img{
+        width: 450px;
+        height: 350px;
+    }
+    .language{
+        height: 480px;
+    }
+    .ytb-block{
+        z-index: 1;
+    }
+    .festival{
+        height: 1500px;
+    }
+    .content__farm-authen{
+        width: 800px;
+    }
+    .content-block > img{
+        max-width: 160px;
+    }
+    .map iframe{
+        width: 290px;
+    }
+    .farm{
+        width: 100%;
+        height: 500px;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    .farm > .may-img{
+        background-size: cover;
+    }
+    .farm .img-farm{
+        margin-left: 450px;
+        z-index: 1;
+    }
+    .farm h1{
+        text-shadow:0 3px 2px white;
+    }
+    .registration .dropdown-toggle{
+        margin-left: 65px;
+        width: 315px;
+    }
+    .button__registration{
+        margin-left: 68px;
+    }
+    .ytb__whyV-N .ytb__VN{
+        width: 525px;
+        height: 370px;
+    }
+    .ytb__whyV-N{
+        margin: 0;
+        margin-top: 20px;
+    }
+}
+/*-----tablet*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .menu__menu{
+        margin-right: 5px;
+    }
+    .sub-rank img{
+        margin-left: 1px;
+    }
+    .sub-rank img{
+        height: 170px;
+    }
+    .box-slide .sub-box-1{
+        width: 620px;
+        height: 325px;
+        top: 30px;
+    }
+    .box-slide .sub-box-1 > .sub-slide{
+        width: 380px;
+    }
+    .box-slide .sub-box-1 > .sub-slide .carousel-inner .h-100{
+        height: 265px !important;
+    }
+    .title-csvc{
+        left:  420px;
+        width: 200px;
+    }
+    .box-slide .sub-box-1 .title-csvc > a{
+        margin-left:100px ;
+        font-size: 15px;
+    }
+    .box-slide .sub-box-1 .title-csvc > p{
+        max-width: 185px;
+        min-height: 140px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 6;
+        -webkit-box-orient: vertical;
+        text-align: justify;
+    }
+    .box-slide .sub-box-1 .title-csvc > h1{
+        max-width: 185px;
+        font-size: 18px;
+        min-height: 70px;
+    }
+    .box-slide .sub-box-1.sub-1{
+        top: 380px;
+    }
+    .box-slide .sub-box-1.sub-2{
+        top: 730px;
+    }
+    .box-slide .sub-box-1.sub-1 > .sub-slide{
+        left: 220px;
+    }
+    .box-slide{
+        width: 100%;
+        height: 1100px;
+    }
+    .language{
+        display: block;
+        height: 1100px;
+    }
+    .englsih{
+        width: 100%;
+    }
+    .japan{
+        width: 100%;
+    }
+    .englsih > img{
+        margin-left: 75px;
+        height: 450px;
+    }
+    .japan > img{
+        margin-left: 75px;
+        height: 450px;
+    }
+    .ytb-block{
+        height: 300px;
+        z-index: 1;
+    }
+    .content-block > h1{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .content-block > img{
+        left: 258px;
+        width: 90px;
+        top: 3px;
+    }
+    .block__festival .img__hoaAD{
+        left: 292px;
+        width: 90px;
+        top: -20px;
+    }
+    .block__festival .img__thethao{
+        left: 260px;
+        width: 60px;
+    }
+    .festival .block__festival{
+        height: 260px;
+        margin-top: 70px;
+    }
+    .content-block > p{
+        max-width: 290px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 10;
+        text-align: justify;
+        font-size: 15px;
+    }
+    .festival{
+        height: 1150px;
+    }
+    .farm > .may-img{
+        background-size: cover;
+    }
+    .farm h1{
+        text-shadow:0 3px 2px white;
+    }
+    .farm .img-farm{
+        margin-left: 325px;
+        z-index: 1;
+    }
+    .content__farm-authen{
+        width: 600px;
+    }
+    .map > iframe{
+        width: 100%;
+    }
+    .registration .dropdown-toggle{
+        margin-left: 50px;
+        width: 230px;
+    }
+    .button__registration{
+        margin-left: 50px;
+    }
+}
+/*-----mobie*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .box-slide .sub-box-1{
+        left: 0;
+    }
+    .ytb__whyV-N{
+        margin: 0;
+    }
+    .ytb__whyV-N .ytb__VN{
+        width: 100%;
+        height: 320px;
+        margin-top: 150px;
+    }
+    .title-csvc{
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .box-slide .sub-box-1 .title-csvc > h1{
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 5px;
+    }
+    .box-slide .sub-box-1 .title-csvc > a{
+        position: absolute;
+        top: 110px;
+        left: 175px;
+        font-size: 17px;
+    }
+    .box-slide{
+        width: 100%;
+        height: 1650px;
+    }
+    .language{
+        height: 1200px;
+        display: block;
+    }   
+    .englsih{
+        width: 100%;
+    }
+    .englsih > img{
+        width: 100%;
+        margin: 0;
+    }
+    .japan{
+        width: 100%;
+    }
+    .japan > img{
+        width: 100%;
+        margin: 0;
+    }
+    .japan h1{
+        margin-top: 30px;
+    }
+ }

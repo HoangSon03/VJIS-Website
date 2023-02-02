@@ -1,0 +1,67 @@
+﻿.container-fluid {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../imgsGameVietNhat/Hinhnen118d.jpg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+    .container-fluid .logo {
+        display: block;
+        width: 140px;
+        height: 100px;
+        position: absolute;
+        right: 78px;
+        top: 53px;
+    }
+
+        .container-fluid .logo img {
+            width: 100%;
+            height: auto;
+        }
+
+    .container-fluid .title {
+        text-shadow: 8px 9px 7px burlywood;
+        display: block;
+        width: 334px;
+        font-size: 75px;
+        font-weight: bold;
+        text-align: center;
+        color: brown;
+        position: absolute;
+        left: 37%;
+        top: 42px;
+        font-family: 'Abril Fatface', cursive;
+    }
+
+    .container-fluid .imggif {
+        display: block;
+        width: 256px;
+        position: absolute;
+        left: 39%;
+        top: 133px;
+    }
+
+        .container-fluid .imggif img {
+            width: 100%;
+            height: auto;
+        }
+
+    .container-fluid .btnLetsgo {
+        display: block;
+        position: absolute;
+        top: 61%;
+        left: 43%;
+    }
+
+        .container-fluid .btnLetsgo a {
+            font-size: 27px;
+            font-weight: bold;
+            font-family: 'Abril Fatface', cursive;
+            transition: 0.5s ease-in-out;
+        }
+
+            .container-fluid .btnLetsgo a:hover {
+                box-shadow: 10px 10px 10px brown;
+            }
